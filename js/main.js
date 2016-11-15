@@ -9,7 +9,7 @@
 	},
 	Functions = {
 		addStars: function() {
-			for(var i = 1; i <= Vars.noOfStars; i++) {
+			for (var i = 1; i <= Vars.noOfStars; i++) {
 				var star = document.createElement('div');
 				var r = Functions.getRandomInt(1, 3);
 				if (r == 1) {
@@ -22,7 +22,7 @@
 					star.className = 'large-star';
 				}
 				star.style.left = Functions.getRandomInt(0, 100) + '%';
-				star.style.top = Functions.getRandomInt(100, 150) + '%';
+				star.style.top = Functions.getRandomInt(0, 100) + '%';
 				DOM.animatedBackground.append(star);
 			}
 		},
@@ -60,6 +60,7 @@
 	dO.ready(function() {
 		DOM.intro = $('#intro');
 		DOM.title = $('#title');
+		$('#footer').css('display', 'block');
 		DOM.animatedBackground = $('#animated-background');
 		Vars.noOfStars = Functions.getRandomInt(0, window.innerWidth) / 3;
 		Functions.addStars();

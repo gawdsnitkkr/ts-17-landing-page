@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-size: 1em;
-	font-family: 'nexa', sans-serif;
+	font-family: 'nexa', Helvetica, sans-serif;
 	text-align: center;
     overflow: hidden;
 }
@@ -21,6 +21,7 @@ body {
 	top: 80%;
 	text-align: center;
 	width: 100%;
+	display: none;
 }
 #gradient {
 	position: fixed;
@@ -52,7 +53,7 @@ ul {
 a {
 	text-decoration: none;
 }
-li{
+li {
 	display: inline-block;
 }
 .icon {
@@ -75,8 +76,6 @@ li{
     right: 0;
     color: #FFF;
     text-align: center;
-    will-change :all;
-    font-family: "lato", sans-serif;
     font-weight: 300;
     font-size: 50px;
     opacity: 0;
@@ -91,8 +90,6 @@ li{
     right: 0;
     color: #FFF;
     text-align: center;
-    will-change :all;
-    font-family: "lato", sans-serif;
     font-weight: 300;
     font-size: 50px;
     opacity: 0;	
@@ -124,28 +121,23 @@ li{
 .small-star {
 	width: 0.5px;
 	height: 0.5px;
-	animation: star-animation 15s linear 0s infinite;
+	/*animation: star-animation 15s linear 0s infinite;
 	-moz-animation: star-animation 15s linear 0s infinite;
-	-webkit-animation: star-animation 15s linear 0s infinite;
+	-webkit-animation: star-animation 15s linear 0s infinite;*/
 }
 .medium-star {
 	width: 1px;
 	height: 1px;
-	animation: star-animation 12s linear 4s infinite;
-	-moz-animation: star-animation 12s linear 4s infinite;
-	-webkit-animation: star-animation 12s linear 4s infinite;
+	/*animation: star-animation 12s linear 6s infinite;
+	-moz-animation: star-animation 12s linear 6s infinite;
+	-webkit-animation: star-animation 12s linear 6s infinite;*/
 }
 .large-star {
 	width: 2px;
 	height: 2px;
-	position: absolute;
-	border-radius: 100%;
-	background: rgba(255,255,255,1);
-	will-change :all;
-	box-shadow: 0px 0px 10px 1px #fff;
-	animation: star-animation 10s linear 2s infinite;
-	-moz-animation: star-animation 10s linear 2s infinite;
-	-webkit-animation: star-animation 10s linear 2s infinite;
+	/*animation: star-animation 12s linear 4s infinite;
+	-moz-animation: star-animation 12s linear 4s infinite;
+	-webkit-animation: star-animation 12s linear 4s infinite;*/
 }
 @media only screen and (max-width:1024px) {
 	#title, #intro {
